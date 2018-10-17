@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.estilo{
+    color: slategrey;
+    text-align: justify;
+    margin: 0px;
+    text-indent: 30px;
+}
+.estilo2{
+    color: slategrey;
+    text-align: justify;
+    margin: 0px;
+}
+#corpo{
+    background-color: #e3e3e3e3;
+}
+#cabecalho{
+    float: right;
+    width: 1000px;
+    height: 150px;
+    background-color: white;
+    border-color: black;
+    border-bottom: 3px solid;
+}
+#principal{
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    background-color: lightblue;
+}
+h1{
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+#logo{
+    width: 250px;
+    height: 150px;
+    float: left;
+}
+#secao{
+    float: right;
+    width: 700px;
+    height: 500px;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+#navegador{
+    float: right;
+    width: 980px;
+    border-color: black;
+    background-color: darkgray;
+    margin: 0;
+    padding: 10px;
+}
+nav ul ol a:visited{
+    color: black;
+}
+nav ul ol a:hover{
+    background-color: black;
+    -webkit-box-align: center;
+    color: white;
+    border-radius: 5px;
+}
+nav ul ol a{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    list-style: none;
+    display: inline;
+    margin-right: 0px;
+    text-decoration: none;
+    padding: 6px;
+    color: black;
+}
+#formulario{
+    margin-top: 20px;
+}
