@@ -4,13 +4,13 @@
 }
 
 .estilo{
-    color: slategrey;
+    color: white;
     text-align: justify;
     margin: 0px;
     text-indent: 30px;
 }
 .estilo2{
-    color: slategrey;
+    color: white;
     text-align: justify;
     margin: 0px;
 }
@@ -29,7 +29,7 @@
     width: 1000px;
     height: 800px;
     margin: auto;
-    background-color: lightblue;
+    background-color: darkgreen;
 }
 h1{
     font-family: Tahoma, sans-serif;
