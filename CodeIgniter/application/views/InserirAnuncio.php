@@ -9,7 +9,7 @@
         <div id="principal">
             <header>
                 <div id="cabecalho">
-                    <a href="index.html"><img src="img/201220130617091943bike2.jpg" alt="Icone Bike" id="logo"> </a>
+                    <a href="index.php"><img src="img/201220130617091943bike2.jpg" alt="Icone Bike" id="logo"> </a>
                     <h1>ENCONTRE A BIKE PARA O SEU ESTILO</h1>
 
                 </div>
@@ -18,8 +18,8 @@
                 <div id="navegador">
                     <ul>
                         <ol>
-                            <a href="index.html">HOME</a>
-                            <a href="InserirAnuncio.html">INSERIR ANÚNCIO</a>
+                            <a href="index.php">HOME</a>
+                            <a href="InserirAnuncio.php">INSERIR ANÚNCIO</a>
                         </ol>
                     </ul>
                 </div>
