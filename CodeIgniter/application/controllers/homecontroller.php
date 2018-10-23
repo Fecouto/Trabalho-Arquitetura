@@ -2,10 +2,11 @@
 
 class Homecontroller extends CI_Controller {
   
-    function index() {
-        /*carrega a nossa view */
-        $this->load->view('index');
+    public function index() {
+
+        $data['hasSearch'] = false;
+        $this->load->view('index', $data);
+
     }
 
 }
-
