@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+#background{
+   background-image: url("../../assets/images/background.jpg");
+   background-size: cover;
+   width: 100%;
+}
 .estilo{
     color: white;
     text-align: justify;
@@ -14,32 +19,27 @@
     text-align: justify;
     margin: 0px;
 }
-#corpo{
-    background-color: #e3e3e3e3;
-}
 #cabecalho{
     float: right;
     width: 1000px;
     height: 150px;
-    background-color: white;
-    border-color: black;
     border-bottom: 3px solid;
+    border-color: yellow;
+    background-color: transparent;
 }
 #principal{
     width: 1000px;
     height: 800px;
     margin: auto;
-    background-color: darkgreen;
+    background-color: transparent;
 }
 h1{
-    font-family: Tahoma, sans-serif;
+    font-family: 'Neue Frutiger W06','Lucida Grande','Helvetica Neue',Helvetica,Arial,Verdana,sans-serif;
     text-align: center;
-    margin-top: 20px;
-}
-#logo{
-    width: 250px;
-    height: 150px;
-    float: left;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 40px;
 }
 #secao{
     float: right;
@@ -61,7 +61,7 @@ nav ul ol a:visited{
     color: black;
 }
 nav ul ol a:hover{
-    background-color: black;
+    background-color: green;
     -webkit-box-align: center;
     color: white;
     border-radius: 5px;

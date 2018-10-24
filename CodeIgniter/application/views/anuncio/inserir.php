@@ -11,7 +11,6 @@
                 <div id="cabecalho">
                     <a href="index.php"><img src="img/201220130617091943bike2.jpg" alt="Icone Bike" id="logo"> </a>
                     <h1>ENCONTRE A BIKE PARA O SEU ESTILO</h1>
-
                 </div>
             </header>
             <nav>

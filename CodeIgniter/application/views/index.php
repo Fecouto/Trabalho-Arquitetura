@@ -1,7 +1,10 @@
 <?php include 'partials/head.php'; ?>
 
+<body id="background">
     <div id="principal">
-<?php include 'partials/header.php'; ?>
+
+        <?php include 'partials/header.php'; ?>
+
         <section>
             <div id="secao">
                 <p class = "estilo">Lorem ipsum blandit malesuada aenean nisl consectetur arcu ac feugiat, est libero id mi sed
