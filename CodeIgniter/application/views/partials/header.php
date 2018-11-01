@@ -13,8 +13,8 @@
     <div id="navegador">
         <ul id="nav">
             <ol>
-                <a href="index.php">HOME</a>
-                <a href="views/anuncio/inserir.php">INSERIR ANÚNCIO</a>
+                <a href="/index.php">HOME</a>
+                <a href="/index.php/anuncios">INSERIR ANÚNCIO</a>
             </ol>
         </ul>
     <div>
