@@ -28,10 +28,10 @@
                                 <ul>
                                     <ol>
                                         <label for="suspension" id="suspensao">Sim</label>
-                                        <input type="radio" id="susp" name="suspensao" value="sim">
+                                        <input type="radio" id="susp" name="suspensao" value="true">
                                     
                                         <label for="suspension" id="suspensao">Não</label>
-                                        <input type="radio" id="susp" name="suspensao" value="nao">
+                                        <input type="radio" id="susp" name="suspensao" value="false">
                                     </ol>
                                 </ul>
                             </div>
