@@ -1,7 +1,7 @@
 <?php
 
 class AnunciosController extends CI_Controller {
-  
+
     public function index() {
 
         $data['hasSearch'] = false;
@@ -11,7 +11,12 @@ class AnunciosController extends CI_Controller {
 
     public function salvar() {
 
-        echo 'salvar';
+        $data = $this->input->post();
+        
+        print_r($data); die();
+        
+        // chamar model passando $data
+        // $this->db->inserir($data);
 
     }
 

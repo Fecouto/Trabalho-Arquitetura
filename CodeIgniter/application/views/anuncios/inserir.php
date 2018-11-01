@@ -13,7 +13,7 @@
                     <form action="/index.php/anuncios/salvar" method="POST" id="formulario">
                         <div>
                             <label class="estilo2">Descrição<br></label>
-                            <textarea name= "textarea" cols="40" rows="5" minlength="10" maxlength="200"></textarea>
+                            <textarea name="descricao" cols="40" rows="5" minlength="10" maxlength="200"></textarea>
                         </div>
                         <div>
                             <label class="estilo2"><br>Tipo<br></label>
@@ -42,7 +42,7 @@
                         </div>
                         <div>
                             <label class="estilo2"><br><br></label>
-                            <input type="submit" value ="Salvar"/>
+                            <button type="submit">Salvar</button>
                         </div>
                     </form>
                 </div>

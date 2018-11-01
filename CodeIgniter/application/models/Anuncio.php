@@ -6,11 +6,10 @@ class Anuncios extends CI_Model {
     public $content;
     public $date;
 
-    public function insert_entry()
+    public function insert($data)
     {
-        $this->input->post('descricao');
-        $this->input->post('title');
-        $this->date = time();
-
-        $this->db->insert('entries', $this);
+die($data);
+        $data['date'] = time();
+        
+        $this->db->insert('entries', $data);
     }
