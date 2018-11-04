@@ -38,7 +38,7 @@
                         </div>
                         <div>
                             <label class="estilo2"><br>Valor<br></label>
-                            <input type="text" />
+                            <input type="text" id="valor" name='preco'/>
                         </div>
                         <div>
                             <label class="estilo2"><br><br></label>

@@ -8,8 +8,9 @@ class Anuncios extends CI_Model {
 
     public function insert($data)
     {
-die($data);
-        $data['date'] = time();
-        
+//die($data);
+        $data['date'] = date('d-m-y');
+        print_r($data); die();
         $this->db->insert('entries', $data);
     }
+}
