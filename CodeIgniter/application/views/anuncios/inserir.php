@@ -1,5 +1,4 @@
-
-<?php  include $_SERVER['DOCUMENT_ROOT'] . '/application/views/partials/head.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/application/views/partials/head.php'; ?>
 
 
 <body id="background">
@@ -38,7 +37,7 @@
                         </div>
                         <div>
                             <label class="estilo2"><br>Valor<br></label>
-                            <input type="text" id="valor" name='preco'/>
+                            <input type="number" id="valor" name='preco'/>
                         </div>
                         <div>
                             <label class="estilo2"><br><br></label>

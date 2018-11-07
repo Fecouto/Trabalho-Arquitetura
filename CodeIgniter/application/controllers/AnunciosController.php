@@ -15,7 +15,6 @@ class AnunciosController extends CI_Controller {
         
         //print_r($data); die();
         
-        // chamar model passando $data
         $this->load->model('Anuncios');
         $this->Anuncios->insert($data);
         //$this->db->inserir($data);
