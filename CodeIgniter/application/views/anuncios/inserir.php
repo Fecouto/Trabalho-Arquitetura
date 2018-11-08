@@ -1,15 +1,14 @@
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/application/views/partials/head.php'; ?>
-
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/Trabalho-Arquitetura/CodeIgniter/application/views/partials/head.php'; ?>
 
 <body id="background">
     <div id="principal">
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/application/views/partials/header.php'; ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/Trabalho-Arquitetura/CodeIgniter/application/views/partials/header.php'; ?>
 
             <section>
                 <div id="secao">
                     <p class = "estilo2">Preencha os campos abaixo para inserir seu anúncio. </p>
-                    <form action="/index.php/anuncios/salvar" method="POST" id="formulario">
+                    <form action="<?= base_url(); ?>/index.php/anuncios/salvar" method="POST" id="formulario">
                         <div>
                             <label class="estilo2">Descrição<br></label>
                             <textarea name="descricao" cols="40" rows="5" minlength="10" maxlength="200"></textarea>
@@ -48,4 +47,5 @@
             </section>
         </div>
 
- <?php include $_SERVER['DOCUMENT_ROOT'] . '/application/views/partials/foot.php'; ?>
+ <?php include $_SERVER['DOCUMENT_ROOT'] . '/Trabalho-Arquitetura/CodeIgniter/application/views/partials/foot.php'; ?>
+ 

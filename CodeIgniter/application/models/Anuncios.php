@@ -7,6 +7,6 @@ class Anuncios extends CI_Model {
 //die($data);
         $data['date'] = date('d-m-Y');
         print_r($data); die();
-        $this->db->insert('entries', $data);
+        $this->db->insert('anuncios', $data);
     }
 }
