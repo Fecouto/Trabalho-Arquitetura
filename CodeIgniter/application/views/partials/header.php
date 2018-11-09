@@ -14,7 +14,7 @@
         <ul id="nav">
             <ol>
                 <a href="<?= base_url(); ?>index.php">HOME</a>
-                <a href="<?= base_url(); ?>index.php/anuncios">INSERIR ANÚNCIO</a>
+                <a href="<?= base_url(); ?>index.php/anuncios">NOVO ANÚNCIO</a>
             </ol>
         </ul>
     <div>

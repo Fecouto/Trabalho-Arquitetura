@@ -8,12 +8,15 @@
    background-size: cover;
    width: 100%;
 }
+
 .estilo{
     color: white;
     text-align: justify;
     margin: 0px;
     text-indent: 30px;
 }
+label,
+legend,
 .estilo2{
     color: white;
     text-align: justify;
@@ -44,10 +47,11 @@ h1{
 #secao{
     float: right;
     width: 700px;
-    height: 500px;
     margin-top: 40px;
     margin-left: 150px;
     margin-right: 150px;
+    background: rgba(255, 255, 255, .1);
+    padding: 20px;
 }
 #navegador{
     float: right;
@@ -77,15 +81,44 @@ nav ul ol a{
     padding: 6px;
     color: black;
 }
-#formulario{
-    margin-top: 20px;
-}
+
 textarea{
     resize: none;
 }
-#selectsuspension{
-    margin-top: 10px;
+
+input,
+select,
+textarea {
+    width: 100%;
 }
-#suspensao{
-    color: white;
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+.grupo-formulario {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.grupo-formulario.linha {
+    width: 100%;
+}
+
+legend,
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.grupo-formulario label.linha {
+    display: inline;
+}
+
+fieldset {
+    border: 0;
 }

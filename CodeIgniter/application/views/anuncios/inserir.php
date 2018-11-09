@@ -6,45 +6,74 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . '/Trabalho-Arquitetura/CodeIgniter/application/views/partials/header.php'; ?>
 
             <section>
+
                 <div id="secao">
-                    <p class = "estilo2">Preencha os campos abaixo para inserir seu anúncio. </p>
+
+                    <p class="estilo2">Preencha os campos abaixo para inserir seu anúncio.</p>
+                 
                     <form action="<?= base_url(); ?>/index.php/anuncios/salvar" method="POST" id="formulario">
-                        <div>
-                            <label class="estilo2">Descrição<br></label>
-                            <textarea name="descricao" cols="40" rows="5" minlength="10" maxlength="200"></textarea>
+
+                        <div class="grupo-formulario linha">
+                            <label for="descricao" class="estilo2">Descrição</label>
+                            <textarea id="descricao" name="descricao" cols="40" rows="5" minlength="10" maxlength="200"></textarea>
                         </div>
-                        <div>
-                            <label class="estilo2"><br>Tipo<br></label>
-                            <select id="select" name="tipo">
-                                <option>Peça</option>
-                                <option>Produto</option>
+
+                        <div class="grupo-formulario">
+
+                            <label for="tamanho-aro" class="estilo2">Tamanho do aro</label>
+                           
+                            <select id="tamanho-aro" name="tipo">
+                                <option>18</option>
+                                <option>20</option>
                             </select>
+
                         </div>
-                        <div>
-                            <label class="estilo2"><br>Suspensão<br></label>
-                            <div id="selectsuspension">
-                                <ul>
-                                    <ol>
-                                        <label for="suspension" id="suspensao">Sim</label>
-                                        <input type="radio" id="susp" name="suspensao" value="true">
-                                    
-                                        <label for="suspension" id="suspensao">Não</label>
-                                        <input type="radio" id="susp" name="suspensao" value="false">
-                                    </ol>
-                                </ul>
-                            </div>
+
+                        <div class="grupo-formulario">
+
+                            <label for="tipo" class="estilo2">Tipo</label>
+                         
+                            <select id="tipo" name="tipo">
+                                <option value="peca">Peça</option>
+                                <option value="bicicleta">Bicicleta</option>
+                            </select>
+
                         </div>
-                        <div>
-                            <label class="estilo2"><br>Valor<br></label>
-                            <input type="number" id="valor" name='preco'/>
+
+                        <div class="grupo-formulario">
+
+                            <label for="valor" class="estilo2">Valor</label>
+                            <input type="number" id="valor" name="preco">
+
                         </div>
-                        <div>
-                            <label class="estilo2"><br><br></label>
+
+                        <div class="grupo-formulario">
+
+                            <fieldset>
+
+                                <legend>Suspensão Completa</legend>
+
+                                <input type="radio" id="suspensao-sim" name="suspensao" value="true">
+                                <label class="linha" for="suspensao-sim">Sim</label>
+                                
+                                <input type="radio" id="suspensao-nao" name="suspensao" value="false">
+                                <label class="linha" for="suspensao-nao">Não</label>
+
+                            </fieldset>   
+
+                        </div>      
+
+                        <div class="grupo-formulario linha">
+
                             <button type="submit">Salvar</button>
+
                         </div>
+                     
                     </form>
                 </div>
+
             </section>
+
         </div>
 
  <?php include $_SERVER['DOCUMENT_ROOT'] . '/Trabalho-Arquitetura/CodeIgniter/application/views/partials/foot.php'; ?>
