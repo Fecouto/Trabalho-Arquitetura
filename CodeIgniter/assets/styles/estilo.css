@@ -25,6 +25,7 @@ legend,
     color: white;
     text-align: justify;
     margin: 0px;
+    font-size: 17px;
 }
 #cabecalho{
     float: right;
@@ -88,6 +89,7 @@ nav ul ol a{
 
 textarea{
     resize: none;
+    font-size: 15px;
 }
 
 input,
@@ -127,4 +129,12 @@ legend,
 
 fieldset {
     border: 0;
+}
+.grupo-formulario select {
+    height: 25px;
+    font-size: 15px;
+}
+#valor{
+    height: 21px;
+    font-size: 15px;
 }
