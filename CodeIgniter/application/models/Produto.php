@@ -6,7 +6,11 @@ class Produto extends CI_Model {
     {
 //die($data);
         
-        print_r($data);
-        $this->db->insert('produto', $data);
+        if ($this->db->insert('produto', $data)) {
+            return $this->db->insert_id();
+        }
+        //print_r($data);
+        return false;        
+   
     }
 }
