@@ -83,10 +83,10 @@
 
                                 <legend>Suspensão Completa</legend>
 
-                                <input type="radio" id="suspensao-sim" name="produto[fullsuspension]" value="1">
+                                <input type="radio" id="suspensao-sim" name="produto[fullSuspension]" value="1">
                                 <label class="linha" for="suspensao-sim">Sim</label>
                                 
-                                <input type="radio" id="suspensao-nao" name="produto[fullsuspension]" value="0">
+                                <input type="radio" id="suspensao-nao" name="produto[fullSuspension]" value="0">
                                 <label class="linha" for="suspensao-nao">Não</label>
 
                             </fieldset>   
