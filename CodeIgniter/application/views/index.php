@@ -1,6 +1,6 @@
 <?php include 'partials/head.php'; ?>
 
-<body id="background">
+<body id="background_index">
     <div id="principal">
 
         <?php include 'partials/header.php'; ?>
