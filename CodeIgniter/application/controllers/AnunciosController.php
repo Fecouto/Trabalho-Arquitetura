@@ -13,11 +13,17 @@ class AnunciosController extends CI_Controller {
 
         $data = $this->input->post();
         
-        //print_r($data); die();
+        //print_r($data['anuncio']);
+
+        $data_anuncio = $data['anuncio'];
+        $data_produto = $data['produto'];
         
-        $this->load->model('Anuncios');
-        $this->Anuncios->insert($data);
-        //$this->db->inserir($data);
+        //print_r($data_produto); die();
+                
+        $this->load->model('Anuncio');
+        $this->Anuncio->insert($data_anuncio);
+        $this->load->model('Produto');
+        $this->Produto->insert($data_produto);
 
     }
 
