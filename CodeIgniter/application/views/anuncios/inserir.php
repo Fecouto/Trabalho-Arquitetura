@@ -37,12 +37,13 @@
                             <label for="tamanho-aro" class="estilo2">Tamanho do aro</label>
 
                             <select id="tamanho-aro" name="produto[tamanhoAro]">
-                                <option>16</option>
-                                <option>20</option>
-                                <option>24</option>
-                                <option>26</option>
-                                <option>28</option>
-                                <option>30</option>
+                                <option value="">Selecione</option>
+                                <option value="16">Aro 16</option>
+                                <option value="20">Aro 20</option>
+                                <option value="24">Aro 24</option>
+                                <option value="26">Aro 26</option>
+                                <option value="28">Aro 28</option>
+                                <option value="30">Aro 30</option>
                             </select>
 
                         </div>
@@ -52,9 +53,10 @@
                             <label for="quantidade-marcha" class="estilo2">Quantidade de Marcha</label>
 
                             <select id="quantidade-marcha" name="produto[quantidadeMarcha]">
-                                <option>18</option>
-                                <option>24</option>
-                                <option>28</option>
+                                <option value="">Selecione</option>    
+                                <option value="18">18 marchas</option>
+                                <option value="24">24 marchas</option>
+                                <option value="28">28 marchas</option>
                             </select>
 
                         </div>
@@ -94,7 +96,7 @@
                         <div class="grupo-formulario">
 
                             <label for="valor" class="estilo2">Valor</label>
-                            <input type="number" id="valor" name="anuncio[preco]">
+                            <input type="number" id="valor" name="anuncio[preco]" min="1">
 
                         </div>
 

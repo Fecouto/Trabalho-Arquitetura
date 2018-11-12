@@ -25,7 +25,6 @@ class AnunciosController extends CI_Controller {
         $this->load->model('Anuncio');
         $this->Anuncio->insert($data_anuncio);
         
-
     }
 
 }
