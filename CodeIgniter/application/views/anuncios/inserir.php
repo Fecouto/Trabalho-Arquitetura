@@ -37,7 +37,7 @@
                             <label for="tamanho-aro" class="estilo2">Tamanho do aro</label>
 
                             <select id="tamanho-aro" name="produto[tamanhoAro]">
-                                <option value="">Selecione</option>
+                                <option label="Selecione"></option>
                                 <option value="16">Aro 16</option>
                                 <option value="20">Aro 20</option>
                                 <option value="24">Aro 24</option>
@@ -110,6 +110,13 @@
                 </div>
 
             </section>
+
+            <script>
+                if (window.location.search === '?cadastrado') {
+                    alert('Cadastrado com sucesso!');
+                    window.location.href = window.location.href.replace('?cadastrado', '');
+                }
+            </script>
 
         </div>
 
