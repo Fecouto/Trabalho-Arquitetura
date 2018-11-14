@@ -18,14 +18,19 @@
 
                         <div class="grupo-formulario linha">
                             <label for="descricao" class="estilo2">Descrição</label>
-                            <textarea id="descricao" name="anuncio[descricao]" cols="40" rows="5" minlength="10" maxlength="200"></textarea>
+                            <textarea id="descricao" name="anuncio[descricao]" cols="40" rows="5" minlength="10" maxlength="200" required 
+                            oninvalid="this.setCustomValidity('Insira uma descrição.')"
+                            oninput="this.setCustomValidity('')"
+                            oninvalid="alert('Must contain 6 or more characters');" pattern=".{6,}" ></textarea>
                         </div>
 
                         <div class="grupo-formulario">
 
                             <label for="tipo" class="estilo2">Tipo</label>
                          
-                            <select id="tipo" name="anuncio[tipo]">
+                            <select id="tipo" name="anuncio[tipo]" required oninvalid="this.setCustomValidity('Selecione um tipo.')"
+                            oninput="this.setCustomValidity('')" >
+                                <option value="">Selecione</option>
                                 <option value="peca">Peça</option>
                                 <option value="bicicleta">Bicicleta</option>
                             </select>
@@ -37,7 +42,7 @@
                             <label for="tamanho-aro" class="estilo2">Tamanho do aro</label>
 
                             <select id="tamanho-aro" name="produto[tamanhoAro]">
-                                <option label="Selecione"></option>
+                                <option value="">Selecione</option>
                                 <option value="16">Aro 16</option>
                                 <option value="20">Aro 20</option>
                                 <option value="24">Aro 24</option>
@@ -96,7 +101,8 @@
                         <div class="grupo-formulario">
 
                             <label for="valor" class="estilo2">Valor</label>
-                            <input type="number" id="valor" name="anuncio[preco]" min="1">
+                            <input type="number" id="valor" name="anuncio[preco]" min="1" required oninvalid="this.setCustomValidity('Digite um valor.')"
+                            oninput="this.setCustomValidity('')" >
 
                         </div>
 
