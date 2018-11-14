@@ -70,6 +70,6 @@ class AnunciosController extends CI_Controller {
     
         return true;
 
-    } 
+    }
 
 }
