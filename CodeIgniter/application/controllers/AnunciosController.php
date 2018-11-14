@@ -12,7 +12,7 @@ class AnunciosController extends CI_Controller {
     }*/
 
     public function index() {
-        //die();
+        
         $data['hasSearch'] = false;
         $this->load->view('anuncios/inserir', $data);
 
@@ -23,20 +23,31 @@ class AnunciosController extends CI_Controller {
         $data = $this->input->post();
         
         //print_r($data['anuncio']);
-        
-         //die();
 
         $data_produto = $data['produto'];
+    
+        if ($data_produto['tamanhoAro'] == null){
 
-        $boolean = $this->existeProduto($data_produto);
+            $data_produto['tamanhoAro'] = null;
 
-        if($boolean){
+        }
+        
+        if ($data_produto['quantidadeMarcha'] == null){
+
+            $data_produto['quantidadeMarcha'] = null;
+
+        }
+
+        if($this->existeProduto($data_produto)){
+
             $this->load->model('Produto');
             $id_produto = $this->Produto->insert($data_produto);
             
         }
         else{
+
             $id_produto = null;
+        
         }
         
         $data_anuncio = $data['anuncio'];
@@ -52,7 +63,7 @@ class AnunciosController extends CI_Controller {
     public function existeProduto($data){
 
         if ($data['tamanhoAro'] == null && $data['quantidadeMarcha'] == null && !isset($data['suspensaoDianteira']) && !isset($data['fullSuspension'])){
-            print_r($data);
+            
             return false;
 
         }
