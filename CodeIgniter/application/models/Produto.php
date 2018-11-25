@@ -2,7 +2,7 @@
 
 class Produto extends CI_Model {
 
-    public function insert($data)
+    public function incluirProduto($data)
     {
 //die($data);
         

@@ -14,7 +14,7 @@
                  
                     </div>
 
-                    <form action="<?= base_url(); ?>/index.php/anuncio/salvar" method="POST" id="formulario">
+                    <form action="<?= base_url(); ?>/index.php/anuncio/incluirAnuncio" method="POST" id="formulario">
 
                         <div class="grupo-formulario linha">
                             <label for="descricao" class="estilo2">Descrição</label>

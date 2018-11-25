@@ -54,4 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['anuncio'] = 'AnunciosController';
-$route['anuncio/salvar'] = 'AnunciosController/salvar';
+$route['anuncio/incluirAnuncio'] = 'AnunciosController/incluirAnuncio';

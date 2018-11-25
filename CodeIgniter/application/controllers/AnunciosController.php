@@ -14,11 +14,11 @@ class AnunciosController extends CI_Controller {
     public function index() {
         
         $data['hasSearch'] = false;
-        $this->load->view('anuncios/inserir', $data);
+        $this->load->view('anuncios/incluirAnuncio', $data);
 
     }
 
-    public function salvar() {
+    public function incluirAnuncio() {
 
         $data = $this->input->post();
         
@@ -41,7 +41,7 @@ class AnunciosController extends CI_Controller {
         if($this->existeProduto($data_produto)){
 
             $this->load->model('Produto');
-            $id_produto = $this->Produto->insert($data_produto);
+            $id_produto = $this->Produto->incluirProduto($data_produto);
             
         }
         else{
@@ -53,7 +53,7 @@ class AnunciosController extends CI_Controller {
         $data_anuncio = $data['anuncio'];
         $data_anuncio['id_produto'] = $id_produto;
         $this->load->model('Anuncio');
-        $this->Anuncio->insert($data_anuncio);
+        $this->Anuncio->incluirAnuncio($data_anuncio);
         
         $this->load->helper('url');
         redirect('/anuncio?cadastrado');
